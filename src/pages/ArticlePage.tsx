@@ -13,7 +13,9 @@ export function ArticlePage() {
       <div className="min-h-screen flex flex-col items-center justify-center text-gray-700">
         <h1 className="text-3xl font-bold mb-6">Article Not Found</h1>
         <Link to="/blog">
-          <Button style={{ background: "#3fbd9e", color: "white", padding: "0.75rem 1.5rem" }}>
+          <Button
+            style={{ background: "#3fbd9e", color: "white", padding: "0.75rem 1.5rem" }}
+          >
             Back to Blog
           </Button>
         </Link>
@@ -25,12 +27,15 @@ export function ArticlePage() {
     <div className="min-h-screen bg-gray-50">
       {/* Hero Image */}
       <div className="relative w-full max-w-4xl mx-auto mt-10 rounded overflow-hidden">
-        <img
-  src={article.image} // no process.env.PUBLIC_URL needed
-  
-/>
+        <img className="w-full h-full object-cover"
+          src={article.image} // no process.env.PUBLIC_URL needed
+          alt={article.title}
+          
+        />
+      
 
-<h1 className="text-4xl font-bold mb-8">{article.title}</h1>
+      {/* Article Title */}
+      <h1 className="text-4xl font-bold mb-8 mt-10">{article.title}</h1>
 
       </div>
 
@@ -40,20 +45,21 @@ export function ArticlePage() {
           <span>{article.date}</span>
           <span>{article.readTime}</span>
         </div>
-        <div className="prose max-w-full mb-8">
-          {(article.content || "").split("\n").map((line: string, index: number) => (
-            <p key={index}>{line}</p>
-          ))}
+
+        <div className="text-lg leading-relaxed text-gray-700 space-y-6 text-justify">
+          {article.content}
         </div>
 
         {/* Back to Blog Button */}
         <div className="mt-12 mb-12">
-  <Link to="/blog">
-    <Button style={{ background: "#3fbd9e", color: "white", padding: "0.75rem 1.5rem" }}>
-      Back to Blog
-    </Button>
-  </Link>
-</div>
+          <Link to="/blog">
+            <Button
+              style={{ background: "#3fbd9e", color: "white", padding: "0.75rem 1.5rem" }}
+            >
+              Back to Blog
+            </Button>
+          </Link>
+        </div>
       </div>
     </div>
   );

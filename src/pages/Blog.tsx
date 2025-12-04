@@ -22,38 +22,44 @@ export function Blog() {
 
       {/* Articles Grid */}
       <section className="py-20 px-6">
-        <div className="container mx-auto max-w-7xl grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="container mx-auto max-w-7xl grid md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch">
           {articles.map((article) => (
-            <Card key={article.id} className="overflow-hidden border-gray-200 cursor-pointer">
-              {/* Image Card */}
-              <Link to={`/article/${article.id}`} className="relative h-56 overflow-hidden block">
-<img
-  src={article.image || "https://via.placeholder.com/600x400"}
-  className="w-full h-56 object-cover rounded-lg shadow-sm pointer-events-none"
-  alt={article.title}
-/>
-              </Link>
+  <Card key={article.id} className="overflow-hidden border-gray-200 cursor-pointer">
+    {/* Image Card */}
+    <Link to={`/article/${article.id}`} className="relative h-56 overflow-hidden block">
+      <img
+        src={article.image || "https://via.placeholder.com/600x400"}
+        className="w-full h-56 object-cover rounded-lg shadow-sm pointer-events-none"
+        alt={article.title}
+      />
+    </Link>
 
-              <CardHeader>
-                <CardTitle className="text-2xl">{article.title}</CardTitle>
-                <CardDescription>{article.excerpt}</CardDescription>
-              </CardHeader>
+    {/* Make content a flex column */}
+    <div className="flex flex-col h-full px-4 py-2">
+      <CardHeader>
+        <CardTitle className="text-2xl">{article.title}</CardTitle>
+        <CardDescription>{article.excerpt}</CardDescription>
+      </CardHeader>
 
-              <CardContent>
-                <div className="flex justify-between items-center mt-2 mb-4 text-sm text-gray-500">
-                  <span>{article.date}</span>
-                  <span>{article.readTime}</span>
-                </div>
+      <CardContent className="mt-auto">
+        <div className="flex justify-between items-center mt-2 mb-4 text-sm text-gray-500">
+          <span>{article.date}</span>
+          <span>{article.readTime}</span>
+        </div>
 
-                {/* Read More Button */}
-                <Link to={`/article/${article.id}`}>
-                  <Button className="w-full mb-2" style={{ background: "#3fbd9e", color: "white" }}>
-                    Read More
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-          ))}
+        {/* Read More Button */}
+        <Link to={`/article/${article.id}`}>
+          <Button
+            className="w-full"
+            style={{ background: "#3fbd9e", color: "white" }}
+          >
+            Read More
+          </Button>
+        </Link>
+      </CardContent>
+    </div>
+  </Card>
+))}
         </div>
       </section>
     </div>
