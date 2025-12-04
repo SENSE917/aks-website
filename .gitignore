@@ -1,3 +1,6 @@
 node_modules/
 dist/
 build/
+/src/assets/images
+*.png
+*.jpg
