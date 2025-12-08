@@ -1,11 +1,5 @@
 import { JSX } from "react";
-import article1Img from "../assets/images/1.jpg";
-import article2Img from "../assets/images/2.jpg";
-import article3Img from "../assets/images/3.jpg";
-import article4Img from "../assets/images/4.png";
-import article5Img from "../assets/images/5.png";
-import article6Img from "../assets/images/6.png";
-import article7Img from "../assets/images/7.jpg";
+
 
 export interface BlogArticle {
   content: JSX.Element;
@@ -27,7 +21,7 @@ export const articles: BlogArticle[] = [
     category: "News",
     date: "November 15, 2025",
     readTime: "5 min read",
-    image: article4Img,
+    image: "/images/4.png",
     author: "Arda Karya Team",
     content: (
       <div>
@@ -81,7 +75,7 @@ lebih seru, interaktif, dan pastinya… kekinian!</p>
     category: "News",
     date: "November 10, 2025",
     readTime: "7 min read",
-    image: article7Img,
+    image: "/images/7.jpg",
     author: "Arda Karya Team",
     content: (
       <div>
@@ -143,7 +137,7 @@ lebih seru, interaktif, dan pastinya… kekinian!</p>
     category: "News",
     date: "December 4, 2025",
     readTime: "6 min read",
-    image: article6Img,
+    image: "/images/6.png",
     author: "Arda Karya Team",
     content: (
       <div>
@@ -219,7 +213,7 @@ lebih seru, interaktif, dan pastinya… kekinian!</p>
     category: "News",
     date: "December 4, 2025",
     readTime: "6 min read",
-    image: article5Img,
+    image: "/images/5.png",
     author: "Arda Karya Team",
     content: (
       <div>
