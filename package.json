@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "vercel-build": "npx vite build"
-  },
+  "dev": "vite",
+  "build": "vite build",
+  "vercel-build": "npx vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
+  "homepage": "https://aksinergy.com"
+},
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@radix-ui/react-accordion": "^1.2.3",
@@ -59,6 +62,7 @@
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react-swc": "^3.10.2",
+    "gh-pages": "^6.3.0",
     "vite": "^6.4.1"
   }
 }
