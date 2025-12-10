@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
   # Website AKS
 
@@ -9,3 +10,7 @@
 
   Run `npm run dev` to start the development server.
   
+=======
+# aks-website
+untuk website AKS
+>>>>>>> ea9326e854c3c7a2077a35612c15a046d42faa5d
