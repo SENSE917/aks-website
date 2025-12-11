@@ -22,9 +22,9 @@ export function Blog() {
 
       {/* Articles Grid */}
       <section className="py-20 px-6">
-        <div className="container mx-auto max-w-7xl grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="container mx-auto max-w-7xl grid md:grid-cols-2 lg:grid-cols-3 gap-8 auto-rows-fr">
           {articles.map((article) => (
-            <Card key={article.id} className="overflow-hidden border-gray-200 cursor-pointer">
+            <Card key={article.id} className="overflow-hidden border-gray-200 cursor-pointer flex flex-col h-full">
               {/* Image Card */}
               <Link to={`/article/${article.id}`} className="relative h-56 overflow-hidden block">
                 <img
