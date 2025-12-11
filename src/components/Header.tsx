@@ -2,6 +2,7 @@ import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Link, useLocation } from "react-router-dom";
+import logoSrc from "@/assets/FotoAKS.png";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,10 +15,10 @@ export function Header() {
       <div className="container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <ImageWithFallback 
-              src="https://aksinergy.com/wp-content/uploads/2023/11/AKS-Warna-PNG.png" 
-              alt="Arda Karya Sinergy Logo" 
-              className="h-10" 
+            <ImageWithFallback
+              src={logoSrc}
+              alt="Arda Karya Sinergy Logo"
+              className="h-8 md:h-10 w-auto max-w-[160px]"
             />
           </Link>
 
