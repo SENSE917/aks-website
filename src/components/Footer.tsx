@@ -15,10 +15,10 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div>
             <div className="flex items-center mb-4">
-              <ImageWithFallback 
-                src="https://aksinergy.com/wp-content/uploads/2023/11/AKS-Warna-PNG.png" 
-                alt="Arda Karya Sinergy Logo" 
-                className="h-10 brightness-0 invert" 
+              <ImageWithFallback
+                src="/images/LOGO.png"
+                alt="Arda Karya Sinergy Logo"
+                className="h-10 w-auto max-w-[180px]"
               />
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
@@ -32,7 +32,7 @@ export function Footer() {
               <li><a href="#" className="hover:text-[#3fbd9e] transition-colors flex items-center gap-2"><Linkedin size={16} /> LinkedIn</a></li>
               <li><a href="#" className="hover:text-[#3fbd9e] transition-colors flex items-center gap-2"><Instagram size={16} /> Instagram</a></li>
               <li><a href="#" className="hover:text-[#3fbd9e] transition-colors flex items-center gap-2"><TikTokIcon /> TikTok</a></li>
-              <li><a href="mailto:info@aksinergy.com" className="hover:text-[#3fbd9e] transition-colors flex items-center gap-2"><Mail size={16} /> Email</a></li>
+              <li><a href="mailto:admin@aksinergy.com" className="hover:text-[#3fbd9e] transition-colors flex items-center gap-2"><Mail size={16} /> Email</a></li>
             </ul>
           </div>
 
