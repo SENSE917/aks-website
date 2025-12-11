@@ -18,7 +18,7 @@ export function Footer() {
               <ImageWithFallback
                 src="/images/LOGO.png"
                 alt="Arda Karya Sinergy Logo"
-                className="h-10 w-auto max-w-[180px]"
+                className="h-10 w-auto max-w-[180px] filter brightness-0 invert"
               />
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
@@ -29,10 +29,26 @@ export function Footer() {
           <div>
             <h4 className="mb-4 text-sm tracking-widest uppercase text-white">Social Media</h4>
             <ul className="space-y-3 text-white/70 text-sm">
-              <li><a href="#" className="hover:text-[#3fbd9e] transition-colors flex items-center gap-2"><Linkedin size={16} /> LinkedIn</a></li>
-              <li><a href="#" className="hover:text-[#3fbd9e] transition-colors flex items-center gap-2"><Instagram size={16} /> Instagram</a></li>
-              <li><a href="#" className="hover:text-[#3fbd9e] transition-colors flex items-center gap-2"><TikTokIcon /> TikTok</a></li>
-              <li><a href="mailto:admin@aksinergy.com" className="hover:text-[#3fbd9e] transition-colors flex items-center gap-2"><Mail size={16} /> Email</a></li>
+              <li>
+                <a href="https://www.linkedin.com/company/pt-arda-karya-sinergy/" target="_blank" rel="noopener noreferrer" className="hover:text-[#3fbd9e] transition-colors flex items-center gap-2">
+                  <Linkedin size={16} /> LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/aksinergy/" target="_blank" rel="noopener noreferrer" className="hover:text-[#3fbd9e] transition-colors flex items-center gap-2">
+                  <Instagram size={16} /> Instagram
+                </a>
+              </li>
+              <li>
+                <a href="https://www.tiktok.com/@aksinergy" target="_blank" rel="noopener noreferrer" className="hover:text-[#3fbd9e] transition-colors flex items-center gap-2">
+                  <TikTokIcon /> TikTok
+                </a>
+              </li>
+              <li>
+                <a href="mailto:admin@aksinergy.com" className="hover:text-[#3fbd9e] transition-colors flex items-center gap-2">
+                  <Mail size={16} /> Email
+                </a>
+              </li>
             </ul>
           </div>
 
