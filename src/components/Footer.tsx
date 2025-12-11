@@ -18,7 +18,8 @@ export function Footer() {
               <ImageWithFallback
                 src="/images/LOGO.png"
                 alt="Arda Karya Sinergy Logo"
-                className="h-10 w-auto max-w-[180px] filter brightness-0 invert"
+                className="h-10 w-auto max-w-[180px]"
+                style={{ filter: 'brightness(0) invert(1)', WebkitFilter: 'brightness(0) invert(1)' }}
               />
             </div>
             <p className="text-white/70 text-sm leading-relaxed">
