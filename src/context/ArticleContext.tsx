@@ -35,7 +35,7 @@ export function Blog() {
               </Link>
 
               {/* Flex wrapper for header + content */}
-              <div className="flex flex-col h-full px-4 py-4">
+              <div className="flex flex-col flex-1 px-4 py-4">
                 <CardHeader>
                   <CardTitle className="text-2xl">{article.title}</CardTitle>
                   <CardDescription>{article.excerpt}</CardDescription>
